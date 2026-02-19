@@ -12,6 +12,7 @@
     <p>Your favorite food is <%= user.food %>.</p>
     <p>Your grade is <%= user.grade %>.</p>
     <p>Your age is <%= user.age %>.</p>
+    <p>Your favorite hobbies are <%= user.hobbies.join(', ') %>.</p>
 
     <% if (user.grade > 2.0) { %>
         <p>You're passing!</p>
