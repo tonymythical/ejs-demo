@@ -7,7 +7,12 @@ app.set('view engine', 'ejs');
 const PORT = 3002;
 
 app.get('/', (req, res) => {
-    res.render('home');
+    let user = {
+        name: "Tony",
+        color: "blue",
+        food: "pizza"
+    }
+    res.render('home', { user });
 });
 
 
