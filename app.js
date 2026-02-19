@@ -1,10 +1,13 @@
 import express from 'express';
 const app = express();
 
+// Set the view engine
+app.set('view engine', 'ejs');
+
 const PORT = 3002;
 
 app.get('/', (req, res) => {
-    res.sendFile(`${import.meta.dirname}/views/home.html`);
+    res.render('home');
 });
 
 
