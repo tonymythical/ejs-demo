@@ -9,8 +9,10 @@ const PORT = 3002;
 app.get('/', (req, res) => {
     let user = {
         name: "Tony",
-        color: "blue",
-        food: "pizza"
+        color: "red",
+        food: "pizza",
+        grade: 2.7,
+        age: 24
     }
     res.render('home', { user });
 });

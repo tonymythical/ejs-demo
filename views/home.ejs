@@ -10,5 +10,18 @@
     <h2>Hi there, <%= user.name %>!</h2>
     <p>Your favorite color is <%= user.color %>.</p>
     <p>Your favorite food is <%= user.food %>.</p>
-</body>
+    <p>Your grade is <%= user.grade %>.</p>
+    <p>Your age is <%= user.age %>.</p>
+
+    <% if (user.grade > 2.0) { %>
+        <p>You're passing!</p>
+    <% } else { %>
+        <p>You need to study harder</p>
+        <% }%>
+    <% if (user.age >= 21) { %>
+        <p>Let's party!</p>
+    <% } else { %>
+        <p>Go home.</p>
+    <% } %>
+</body> 
 </html>
