@@ -13,7 +13,8 @@ app.get('/', (req, res) => {
         food: "pizza",
         grade: 2.7,
         age: 24,
-        hobbies: ["coding", "gaming", "piano"]
+        hobbies: ["coding", "gaming", "piano"],
+        foods: ["pizza", "burgers", "sushi"]
     }
     res.render('home', { user });
 });
