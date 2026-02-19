@@ -7,6 +7,8 @@ app.get('/', (req, res) => {
     res.sendFile(`${import.meta.dirname}/views/home.html`);
 });
 
+
+
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
 });
